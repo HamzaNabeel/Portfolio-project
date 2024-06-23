@@ -8,7 +8,7 @@ import linkedinLight from '/src/assets/linkedin-light.svg'
 import twitterDark from '/src/assets/twitter-dark.svg'
 import githubDark from '/src/assets/github-dark.svg'
 import linkedinDark from '/src/assets/linkedin-dark.svg'
-import CV from '/src/assets/HAMZA NABEEL.pdf'
+import CV from '/src/assets/HAMZA NABEEL-WEB.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 const Hero = () => {
