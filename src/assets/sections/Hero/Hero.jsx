@@ -10,8 +10,16 @@ import githubDark from '/src/assets/github-dark.svg'
 import linkedinDark from '/src/assets/linkedin-dark.svg'
 import CV from '/src/assets/HAMZA NABEEL-WEB.pdf'
 import { useTheme } from '../../common/ThemeContext'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ['Front-end Developer', 'Designer'],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  })
+
   const { theme, toggleTheme } = useTheme()
 
   const themeIcon = theme === 'light' ? sun : moon
@@ -36,7 +44,13 @@ const Hero = () => {
         <h1>
           Hamza <br /> Nabeel
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>
+          I'm a{' '}
+          <span style={{color: '#44b6f8' }}>{text}</span>
+          <span style={{ color: 'red' }}>
+            <Cursor/>
+          </span>
+        </h2>
         <span>
           {/* twitter icon section  */}
           <a href="https://x.com/hamzanabeel01" target="_blank">
